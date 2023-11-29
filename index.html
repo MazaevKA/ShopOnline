@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CRM-ShopOnline</title>
+</head>
+<body>
+
+<div class="modal">
+  <h2 class="modal__title">Добавить товар</h2>
+
+  <form class="modal__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+
+    <fieldset class="form__fieldset">
+      <label class="form__label" for="name">Наименование</label>
+        <input class="form__input" id="name" type="text" name="name">
+
+      <label class="form__label" for="category">Категория</label>
+        <input class="form__input" id="category" type="text" name="category">
+
+      <label class="form__label" for="units">Единицы измерения</label>
+        <input class="form__input" id="units" type="text" name="units">
+
+      <fieldset class="form__fieldset--discount">
+
+        <label class="form__label form__label--checkbox" for="confirm"></label>
+        <input class="form__input form__input--checkbox" id="confirm" name="confirm" type="checkbox">
+
+        <label class="form__label" for="discount">Дисконт</label>
+        <input class="form__input form__input--discount" id="discount" name="discount" type="text" disabled>
+
+      </fieldset>
+
+      <label class="form__label" for="description">Описание</label>
+        <textarea class="form__textarea" id="description" name="description" cols="30" rows="10"></textarea>
+
+      <label class="form__label" for="amount">Количество</label>
+        <input class="form__input" name="amount" id="amount" type="text">
+
+      <label class="form__label" for="price">Цена</label>
+        <input class="form__input" id="price" name="price" type="text">
+
+    </fieldset>
+
+    <button class="form__button">Добавить товар</button>
+  </form>
+
+  <button class="modal__close">
+    <span class="modal__close-line"></span>
+    <span class="modal__close-line"></span>
+  </button>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
