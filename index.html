@@ -6,7 +6,7 @@
   <link rel="stylesheet" href="css/style.css">
   <title>CRM-ShopOnline</title>
 </head>
-<body>
+<body class="overlay">
 
 <div class="modal">
   <h2 class="modal__title">Добавить товар</h2>
@@ -23,12 +23,11 @@
       <label class="form__label" for="units">Единицы измерения</label>
         <input class="form__input" id="units" type="text" name="units">
 
-      <fieldset class="form__fieldset--discount">
+      <fieldset class="form__fieldset form__fieldset--discount">
 
         <label class="form__label form__label--checkbox" for="confirm"></label>
-        <input class="form__input form__input--checkbox" id="confirm" name="confirm" type="checkbox">
-
         <label class="form__label" for="discount">Дисконт</label>
+        <input class="form__input form__input--checkbox" id="confirm" name="confirm" type="checkbox">
         <input class="form__input form__input--discount" id="discount" name="discount" type="text" disabled>
 
       </fieldset>
