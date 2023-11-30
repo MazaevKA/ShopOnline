@@ -1,12 +1,10 @@
 @import "normalize.css";
 @import "global.css";
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
+@import "fonts.css";
 
 .modal {
     position: absolute;
-    padding: 0 106px 99px;
+    padding: 32px 106px 99px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -17,7 +15,6 @@ body {
 }
 
 .modal__title {
-    padding-top: 32px;
     margin-bottom: 43px;
     font-weight: 700;
     font-size: 24px;
@@ -78,7 +75,7 @@ body {
     appearance: none;
     width: 40px;
     top: 25px;
-    left: -4px;
+    left: 0;
 }
 
 .form__input--checkbox:before {

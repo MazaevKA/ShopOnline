@@ -16,8 +16,8 @@ body {
   min-width: 320px;
   color: #6E6893; /* цвет текста */
   background-color: #ffffff; /* цвет сайта */
-  font-family: Arial, sans-serif;
-  font-weight: 400;
+  font-family: Inter, sans-serif;
+  font-weight: 600;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
