@@ -15,35 +15,35 @@
 
     <fieldset class="form__fieldset">
       <label class="form__label" for="name">Наименование</label>
-        <input class="form__input" id="name" type="text" name="name">
+        <input class="form__input" id="name" name="name" type="text">
 
       <label class="form__label" for="category">Категория</label>
-        <input class="form__input" id="category" type="text" name="category">
+        <input class="form__input" id="category" name="category" type="text">
 
       <label class="form__label" for="units">Единицы измерения</label>
-        <input class="form__input" id="units" type="text" name="units">
+        <input class="form__input" id="units" name="units" type="text">
 
       <fieldset class="form__fieldset form__fieldset--discount">
 
         <label class="form__label form__label--checkbox" for="confirm"></label>
         <label class="form__label" for="discount">Дисконт</label>
-        <input class="form__input form__input--checkbox" id="confirm" name="confirm" type="checkbox">
+        <input class="form__input form__input--checkbox" id="confirm" name="confirm" value="discount" type="checkbox">
         <input class="form__input form__input--discount" id="discount" name="discount" type="text" disabled>
 
       </fieldset>
 
       <label class="form__label" for="description">Описание</label>
-        <textarea class="form__textarea" id="description" name="description" cols="30" rows="10"></textarea>
+        <textarea class="form__textarea" id="description" name="description" cols="30" rows="5"></textarea>
 
       <label class="form__label" for="amount">Количество</label>
-        <input class="form__input" name="amount" id="amount" type="text">
+        <input class="form__input" id="amount" name="amount" type="text">
 
       <label class="form__label" for="price">Цена</label>
         <input class="form__input" id="price" name="price" type="text">
 
     </fieldset>
 
-    <button class="form__button">Добавить товар</button>
+    <button type="submit" class="form__button">Добавить товар</button>
   </form>
 
   <button class="modal__close">
