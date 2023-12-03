@@ -3,21 +3,20 @@
 @import "fonts.css";
 
 .overlay {
-  position: absolute;
+  position: fixed;
   inset: 0;
-  background-color: #E5E5E5;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .modal {
-  position: absolute;
+  position: relative;
+  margin: 0 auto;
   padding: 32px 106px 28px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: #F2F0F9;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.25);
   color: #6E6893;
-  width: 792px;
+  max-width: 792px;
 }
 
 .modal__title {
@@ -29,6 +28,10 @@
   text-transform: uppercase;
 }
 
+.form {
+  text-align: right;
+}
+
 .form__fieldset {
   margin-bottom: 32px;
   padding: 28px;
@@ -36,6 +39,7 @@
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   border: none;
+  text-align: left;
 }
 
 .form__label {
@@ -50,43 +54,38 @@
 }
 
 .form__input {
+  display: block;
   border: none;
   background-color: #F4F2FF;
   width: 100%;
   margin-bottom: 12px;
   border-radius: 6px;
-  display: inherit;
-  padding: 10px 10px;
-  line-height: 100%;
+  padding: 11px;
+  line-height: 1.125;
+  resize: none;
 }
 
-.form__input--discount {
-  margin-left: 50px;
-  width: calc(100% - 50px);
+.form__input:last-child {
+  margin-bottom: 0;
 }
 
-.form__fieldset--discount {
+.form__discount-group {
   position: relative;
-  margin: 0;
-  padding: 0;
-  border: none;
-  display: inline-block;
-  box-shadow: none;
-  width: 100%;
+  padding-left: 50px;
+  margin-bottom: 12px;
 }
 
-.form__input--checkbox {
+.form__input-checkbox {
   position: absolute;
-  display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   width: 40px;
-  top: 25px;
+  top: 0;
   left: 0;
 }
 
-.form__input--checkbox:before {
+.form__input-checkbox:before {
   content: '';
   position: absolute;
   top: 0;
@@ -99,7 +98,7 @@
   cursor: pointer;
 }
 
-.form__input--checkbox:after {
+.form__input-checkbox:after {
   content: '';
   position: absolute;
   top: 10px;
@@ -114,7 +113,7 @@
   cursor: pointer;
 }
 
-.form__input--checkbox:checked:after {
+.form__input-checkbox:checked:after {
   opacity: 1;
 }
 
@@ -122,30 +121,19 @@
   background-color: #EEEEEE;
 }
 
-.form__input--checkbox:checked + .form__input--discount {
+.form__input-checkbox:checked + .form__input {
   background-color: #F4F2FF;
-}
-
-.form__textarea {
-  width: 100%;
-  border: none;
-  background-color: #F4F2FF;
-  margin-bottom: 12px;
-  border-radius: 6px;
-  resize: none;
-  padding: 10px;
 }
 
 .form__button {
-  float: right;
   color: #FFF;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   background-color: #6D5BD0;
   border-radius: 6px;
-  margin-right: 28px;
   padding: 10px 25px;
+  transform: translateX(-28px);
   transition: background-color .2s ease-in;
 }
 
@@ -157,18 +145,18 @@
   background-color: #6e5cd1;
 }
 
-.modal__close {
+.modal__button {
   position: absolute;
   top: 20px;
   right: 35px;
   padding: 0;
   cursor: pointer;
   border: none;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }
 
-.modal__close-line {
+.button__first-close-line, .button__last-close-line {
   width: 30px;
   height: 3px;
   background-color: #6E6893;
@@ -176,10 +164,10 @@
   border-radius: 3px;
 }
 
-.modal__close-line:nth-child(1) {
+.button__first-close-line {
   transform: translateY(1px) rotate(45deg);
 }
 
-.modal__close-line:nth-child(2) {
+.button__last-close-line {
   transform: translateY(-2px) rotate(-45deg);
 }
