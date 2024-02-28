@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CRM-ShopOnline</title>
+</head>
+<body>
+
+  <div class="overlay">
+    <div class="modal">
+      <h2 class="modal__title">Добавить товар</h2>
+
+      <form class="modal__form form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+
+        <fieldset class="form__fieldset">
+          <label class="form__label" for="name">Наименование</label>
+            <input class="form__input" id="name" type="text">
+
+          <label class="form__label" for="category">Категория</label>
+            <input class="form__input" id="category" type="text">
+
+          <label class="form__label" for="units">Единицы измерения</label>
+            <input class="form__input" id="units" type="text">
+
+          <label class="form__label" for="discount">Дисконт</label>
+          <div class="form__discount-group">
+            <input class="form__input-checkbox" aria-label="Активация дисконта" type="checkbox">
+            <input class="form__input" id="discount" type="text" disabled>
+          </div>
+
+          <label class="form__label" for="description">Описание</label>
+            <textarea class="form__input" id="description" cols="30" rows="5"></textarea>
+
+          <label class="form__label" for="amount">Количество</label>
+            <input class="form__input" id="amount" type="text">
+
+          <label class="form__label" for="price">Цена</label>
+            <input class="form__input" id="price" type="text">
+
+        </fieldset>
+
+        <button type="submit" class="form__button">Добавить товар</button>
+      </form>
+
+      <button type="button" class="modal__button">
+        <span class="button__first-line"></span>
+        <span class="button__last-line"></span>
+      </button>
+    </div>
+  </div>
+
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
