@@ -15,7 +15,7 @@ body {
   min-height: 100vh;
   min-width: 320px;
   color: #6E6893; /* цвет текста */
-  background-color: E5E5E5; /* цвет сайта */
+  background-color: #E5E5E5; /* цвет сайта */
   font-family: Inter, sans-serif;
   font-weight: 600;
   -webkit-font-smoothing: antialiased;
@@ -74,3 +74,8 @@ iframe {
   transform: scale(0);
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 60px;
+  max-width: 1830px;
+}
