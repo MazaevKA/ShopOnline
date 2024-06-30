@@ -1,0 +1,12 @@
+@import "__wrap/__wrap.css";
+@import "__title/__title.css";
+
+.banner {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 767px) {
+    .banner {
+        margin-bottom: 20px;
+    }
+}

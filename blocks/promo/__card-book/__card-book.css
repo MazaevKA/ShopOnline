@@ -1,0 +1,66 @@
+.promo__card-book {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 245px;
+    height: auto;
+    border-radius: 20px;
+    background: url("../../../blocks/promo/img/book.jpg") no-repeat center/cover;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 130%;
+    padding: 20px;
+    grid-area: book;
+}
+
+.promo__card-book span {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+    .promo__card-book {
+        width: 217px;
+        height: auto;
+        padding: 14px;
+        border-radius: 16px;
+        background-image: url("../../../blocks/promo/img/book-1024.jpg");
+        font-size: 24px;
+    }
+
+    .promo__card-book span {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .promo__card-book {
+        width: 140px;
+        height: 140px;
+        border-radius: 12px;
+        padding: 0 4px 15px 10px;
+        background-image: url("../../../blocks/promo/img/book-768.jpg");
+        font-size: 20px;
+        line-height: 110%;
+    }
+
+    .promo__card-book span {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo__card-book {
+        width: 130px;
+        height: 130px;
+        border-radius: 8px;
+        font-size: 12px;
+        padding: 10px 55px 10px 10px;
+        background-image: url("../../../blocks/promo/img/book-320.jpg");
+    }
+
+    .promo__card-book span {
+        display: block;
+        font-size: 16px;
+    }
+}

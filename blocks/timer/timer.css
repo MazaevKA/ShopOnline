@@ -1,0 +1,8 @@
+@import "__text/__text.css";
+@import "__time/__time.css";
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

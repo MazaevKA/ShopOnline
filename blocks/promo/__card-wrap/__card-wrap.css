@@ -1,0 +1,17 @@
+.promo__card-wrap {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .promo__card-wrap {
+        gap: 53px;
+    }
+}
+
+@media (max-width: 767px) {
+    .promo__card-wrap {
+        gap: 102px;
+    }
+}

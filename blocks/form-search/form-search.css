@@ -1,0 +1,25 @@
+@import "__input/__input.css";
+@import "__button/__button.css";
+
+.form-search {
+    position: relative;
+    grid-area: search;
+}
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+    .form-search {
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .form-search {
+        width: 540px;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-search {
+
+    }
+}

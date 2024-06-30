@@ -1,0 +1,85 @@
+.promo__card-shoes {
+    display: flex;
+    align-items: end;
+    padding: 20px;
+    width: 550px;
+    height: auto;
+    border-radius: 20px;
+    background: url("../../../blocks/promo/img/shoes.jpg") no-repeat center/cover;
+    grid-area: shoes;
+}
+
+.promo__card-shoes p {
+    display: block;
+    background-color: #38C0EB;
+    padding: 24px 26px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+}
+
+.promo__card-shoes span {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+}
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+    .promo__card-shoes {
+        width: 450px;
+        border-radius: 16px;
+        background-image: url("../../../blocks/promo/img/shoes-1024.jpg");
+    }
+
+    .promo__card-shoes p {
+        font-size: 30px;
+    }
+
+    .promo__card-shoes span {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .promo__card-shoes {
+        width: 380px;
+        height: 380px;
+        padding: 10px;
+        border-radius: 12px;
+        background-image: url("../../../blocks/promo/img/shoes-768.jpg");
+    }
+
+    .promo__card-shoes p {
+        border-radius: 12px;
+        font-size: 16px;
+        padding: 16px 28px;
+        line-height: 110%;
+        letter-spacing: -0.4px;
+    }
+
+    .promo__card-shoes span {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 767px) {
+    .promo__card-shoes {
+        width: 280px;
+        height: 280px;
+        padding: 10px;
+        border-radius: 12px;
+        background-image: url("../../../blocks/promo/img/shoes-320.jpg");
+    }
+
+    .promo__card-shoes p {
+        border-radius: 8px;
+        font-size: 12px;
+        padding: 9px 25px;
+        letter-spacing: -0.4px;
+    }
+
+    .promo__card-shoes span {
+        font-size: 16px;
+    }
+}

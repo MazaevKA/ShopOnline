@@ -1,97 +1,101 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-  <title>CRM-ShopOnline</title>
+  <title>ShopOnline</title>
 </head>
 <body>
 
-
-
-  <div class="header">
-    <div class="container header__container">
-      <div class="logo">Shop<span class="logo__text-blue">Online</span></div>
-
-      <button class="header__button" type="submit">
-        <div class="header__button-img">
-          <svg width="18.000000" height="12.000000" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path d="M0 12L6 12L6 10L0 10L0 12ZM0 0L0 2L18 2L18 0L0 0ZM0 7L12 7L12 5L0 5L0 7Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
-          </svg>
-        </div>
-        Меню
-      </button>
-
-      <form action="#" class="search">
-        <input type="text" class="search__input" placeholder="Я ищу...">
-        <button class="search__button" type="submit">
-          <svg width="26.234375" height="26.234985" viewBox="0 0 26.2344 26.235" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <path d="M18.75 16.5L17.5645 16.5L17.1445 16.095C18.6152 14.385 19.5 12.165 19.5 9.75C19.5 4.36499 15.1348 0 9.75 0C4.36523 0 0 4.36499 0 9.75C0 15.135 4.36523 19.5 9.75 19.5C12.1641 19.5 14.3848 18.615 16.0957 17.145L16.5 17.5649L16.5 18.75L24 26.235L26.2344 24L18.75 16.5ZM9.75 16.5C6.01562 16.5 3 13.485 3 9.75C3 6.01501 6.01562 3 9.75 3C13.4844 3 16.5 6.01501 16.5 9.75C16.5 13.485 13.4844 16.5 9.75 16.5Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
-          </svg>
-          
-        </button>
+<header class="header">
+  <div class="container">
+    <div class="header__wrap">
+      <a class="header__logo">Shop<span>Online</span></a>
+      <a class="header__nav">Меню</a>
+      <form action="#" class="form-search">
+        <input type="text" class="form-search__input" placeholder="Я ищу...">
+        <button class="form-search__button" type="submit"></button>
       </form>
 
-      <div class="toolbar">
-        <a class="toolbar__link" href="#">
-          <div class="toolbar__icon">
-            <svg width="24.000000" height="24.000000" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M12 12C15.3145 12 18 9.31494 18 6C18 2.68506 15.3145 0 12 0C8.68555 0 6 2.68506 6 6C6 9.31494 8.68555 12 12 12ZM12 15C7.99414 15 0 17.01 0 21L0 24L24 24L24 21C24 17.01 16.0059 15 12 15Z" fill="#2D2D2D" fill-opacity="1.000000" fill-rule="nonzero"/>
-            </svg>
-          </div>
-          <p class="toolbar__text">Профиль</p>
+      <div class="menu">
+        <a href="#" class="menu__link">
+          <img class="menu__img" src="blocks/header/img/person.svg" alt="Профиль">
+          <p class="menu__text">Профиль</p>
         </a>
-
-        <a class="toolbar__link" href="#">
-          <svg width="36.000000" height="36.000000" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <rect width="36.000000" height="36.000000" fill="#FFFFFF" fill-opacity="0"/>
-            <g clip-path="url(#clip25_29)">
-              <path d="M10.5 27C8.84961 27 7.51562 28.35 7.51562 30C7.51562 31.65 8.84961 33 10.5 33C12.1504 33 13.5 31.65 13.5 30C13.5 28.35 12.1504 27 10.5 27ZM1.5 3L1.5 6L4.5 6L9.90039 17.385L7.875 21.0601C7.63477 21.48 7.5 21.975 7.5 22.5C7.5 24.15 8.84961 25.5 10.5 25.5L28.5 25.5L28.5 22.5L11.1309 22.5C10.9199 22.5 10.7559 22.335 10.7559 22.125L10.8008 21.9449L12.1504 19.5L23.3242 19.5C24.4492 19.5 25.4395 18.885 25.9492 17.955L31.3203 8.21997C31.4395 8.01001 31.5 7.755 31.5 7.5C31.5 6.67505 30.8242 6 30 6L7.81445 6L6.4043 3L1.5 3ZM25.5 27C23.8496 27 22.5156 28.35 22.5156 30C22.5156 31.65 23.8496 33 25.5 33C27.1504 33 28.5 31.65 28.5 30C28.5 28.35 27.1504 27 25.5 27Z" fill="#2D2D2D" fill-opacity="1.000000" fill-rule="nonzero"/>
-              <circle id="Ellipse 8" cx="29.000000" cy="7.000000" r="7.000000" fill="#FFFFFF" fill-opacity="1.000000"/>
-              <path id="2" d="M32.308 10.969C32.2007 10.8617 32.0537 10.808 31.867 10.808L29.27 10.808C29.074 10.808 28.8663 10.8267 28.647 10.864C28.4323 10.8967 28.2153 10.9457 27.996 11.011L30.278 8.68Q30.684 8.26 31.055 7.854C31.3023 7.58333 31.517 7.30333 31.699 7.014C31.8857 6.72467 32.0327 6.42133 32.14 6.104C32.252 5.78667 32.308 5.44133 32.308 5.068C32.308 4.634 32.231 4.23967 32.077 3.885C31.923 3.53033 31.7083 3.227 31.433 2.975C31.1577 2.723 30.8263 2.52933 30.439 2.394C30.0517 2.254 29.6247 2.184 29.158 2.184Q28.486 2.184 27.898 2.373C27.5107 2.49433 27.1653 2.67867 26.862 2.926C26.5633 3.16867 26.3137 3.47433 26.113 3.843Q25.812 4.389 25.707 5.117L26.617 5.278C26.855 5.31533 27.037 5.299 27.163 5.229C27.289 5.159 27.3917 5.01667 27.471 4.802C27.5177 4.634 27.5877 4.48 27.681 4.34C27.7743 4.2 27.8887 4.07867 28.024 3.976C28.1593 3.86867 28.3133 3.787 28.486 3.731C28.6633 3.67033 28.8547 3.64 29.06 3.64Q29.396 3.64 29.662 3.738C29.844 3.79867 29.998 3.892 30.124 4.018C30.2547 4.144 30.355 4.30033 30.425 4.487C30.495 4.669 30.53 4.88133 30.53 5.124C30.53 5.39 30.4927 5.64433 30.418 5.887C30.348 6.125 30.2453 6.36067 30.11 6.594C29.9747 6.82733 29.8043 7.063 29.599 7.301C29.3983 7.539 29.1697 7.78867 28.913 8.05L25.84 11.13Q25.7112 11.2532 25.6362 11.4033Q25.6174 11.4408 25.602 11.48Q25.532 11.669 25.532 11.844L25.532 12.418L32.476 12.418L32.476 11.382Q32.476 11.2025 32.3953 11.0735Q32.3596 11.0163 32.308 10.969Z" fill="#3670C7" fill-opacity="1.000000" fill-rule="evenodd"/>
-            </g>
-          </svg>
-          <p class="toolbar__text">Корзина</p>
+        <a href="#" class="menu__link menu__link--cart">
+          <img class="menu__img" src="blocks/header/img/cart.svg" alt="Корзина">
+          <p class="menu__text">Корзина</p>
         </a>
-
-        <a class="toolbar__link" href="#">
-          <div class="toolbar__icon">
-            <svg width="30.000000" height="27.525024" viewBox="0 0 30 27.525" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M15 27.525L12.8242 25.545C5.09961 18.54 0 13.92 0 8.25C0 3.63 3.63086 0 8.25 0C10.8594 0 13.3652 1.21497 15 3.13501C16.6348 1.21497 19.1406 0 21.75 0C26.3691 0 30 3.63 30 8.25C30 13.92 24.9004 18.54 17.1758 25.5601L15 27.525Z" fill="#2D2D2D" fill-opacity="1.000000" fill-rule="nonzero"/>
-            </svg>
-          </div>
-          <p class="toolbar__text">Избранное</p>
+        <a href="#" class="menu__link">
+          <img class="menu__img" src="blocks/header/img/favorite.svg" alt="Избранное">
+          <p class="menu__text">Избранное</p>
         </a>
+      </div>
 
+    </div>
+  </div>
+
+</header>
+
+<main class="main">
+  <div class="banner">
+    <div class="container">
+      <div class="banner__wrap">
+        <h2 class="banner__title">-50% на все ноутбуки</h2>
+        <div class="timer">
+          <p class="timer__text">До конца акции:</p>
+          <p class="timer__time"><span>3</span>Дня <span>8</span>часов <span>43</span>минуты</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <section class="banner">
-    <div class="container banner__container">
-      <div class="banner__content">
-        <h1 class="banner__title">-50% на все ноутбуки</h1>
-        <div class="banner__timer">
-          <p class="banner__timer-text">До конца акции:</p>
-          <div class="banner__counter">
-            <div class="banner__counter-col">
-              <span class="banner__counter-text--big-word">3</span><p class="banner__counter-text"> дня</p>
-            </div>
-            <div class="banner__counter-col">
-              <span class="banner__counter-text--big-word">8</span><p class="banner__counter-text"> часов</p>
-            </div>
-            <div class="banner__counter-col">
-              <span class="banner__counter-text--big-word">43</span><p class="banner__counter-text"> минуты</p>
-            </div>
+  <div class="promo">
+    <div class="container">
+      <div class="promo__wrap">
+
+        <div class="promo__card-book">
+          <p><span>Книга –</span> лучший подарок</p>
+        </div>
+        <div class="promo__card-time">
+          <p>Время скидок!</p>
+          <p class="promo__card-discount">-25%</p>
+        </div>
+        <div class="promo__card-sneakers">
+          <p class="promo__card-discount">-40%</p>
+        </div>
+        <div class="promo__card-shoes">
+          <p>Вторая пара кроссовок <span>в&nbsp;подарок!</span></p>
+        </div>
+        <div class="promo__card-present">
+          <p>Идеи новогодних подарков</p>
+        </div>
+        <div class="promo__card-notebook">
+          <div class="promo__card-wrap">
+            <p>Выгодно в декабре!</p>
+            <p class="promo__card-discount">-15%</p>
           </div>
         </div>
+
+        <div class="promo__card-new-year">
+          <p>Новогодние украшения</p>
+        </div>
+        <div class="promo__card-girl">
+          <p class="promo__card-discount">-55%</p>
+        </div>
+        <div class="promo__card-chemistry">
+          <p>На бытовую химию</p>
+          <p class="promo__card-discount">-25%</p>
+        </div>
+        <div class="promo__card-toys">
+        </div>
+
       </div>
-      
-
     </div>
-  </section>
-
+  </div>
+</main>
 
 <script src="js/script.js"></script>
 

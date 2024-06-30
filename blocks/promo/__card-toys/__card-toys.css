@@ -1,0 +1,35 @@
+
+.promo__card-toys {
+    width: 245px;
+    height: auto;
+    border-radius: 20px;
+    background: url("../../../blocks/promo/img/toys.jpg") no-repeat center/cover;
+    grid-area: toys;
+}
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+    .promo__card-toys {
+        width: 207px;
+        border-radius: 16px;
+        background-image: url("../../../blocks/promo/img/toys-1024.jpg");
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .promo__card-toys {
+        place-self: end;
+        width: 140px;
+        height: 60px;
+        border-radius: 12px;
+        background-image: url("../../../blocks/promo/img/toys-768.jpg");
+    }
+}
+
+@media (max-width: 767px) {
+    .promo__card-toys {
+        width: 130px;
+        height: 130px;
+        border-radius: 8px;
+        background-image: url("../../../blocks/promo/img/toys-320.jpg");
+    }
+}

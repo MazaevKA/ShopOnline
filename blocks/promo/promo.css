@@ -1,0 +1,18 @@
+@import "__wrap/__wrap.css";
+@import "__card-book/__card-book.css";
+@import "__card-time/__card-time.css";
+@import "__card-sneakers/__card-sneakers.css";
+@import "__card-shoes/__card-shoes.css";
+@import "__card-present/__card-present.css";
+@import "__card-notebook/__card-notebook.css";
+@import "__card-new-year/__card-new-year.css";
+@import "__card-girl/__card-girl.css";
+@import "__card-chemistry/__card-chemistry.css";
+@import "__card-toys/__card-toys.css";
+@import "__card-discount/__card-discount.css";
+@import "__card-wrap/__card-wrap.css";
+
+.promo {
+    margin-bottom: 9rem;
+    color: #FFFFFF;
+}

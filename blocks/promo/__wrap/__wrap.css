@@ -1,0 +1,59 @@
+.promo__wrap {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "book time shoes shoes present present"
+      "sneakers sneakers shoes shoes notebook notebook"
+      "new-year new-year new-year new-year girl chemistry"
+      "new-year new-year new-year new-year girl toys";
+}
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+    .promo__wrap {
+        gap: 24px;
+        grid-template-columns: repeat(4, 217px);
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+      "book time shoes shoes"
+      "sneakers sneakers shoes shoes"
+      "present present girl chemistry"
+      "notebook notebook girl toys"
+      "new-year new-year new-year new-year"
+      "new-year new-year new-year new-year";
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .promo__wrap {
+        row-gap: 20px;
+        column-gap: 20px;
+        grid-template-columns: 140px 140px 220px 140px;
+        grid-template-rows: 140px 140px 140px 140px 1fr 1fr;
+        grid-template-areas:
+      "book time shoes shoes"
+      "sneakers sneakers shoes shoes"
+      "present present girl chemistry"
+      "notebook notebook girl toys"
+      "new-year new-year new-year new-year"
+      "new-year new-year new-year new-year";
+    }
+}
+
+@media (max-width: 767px) {
+    .promo__wrap {
+        gap: 20px;
+        grid-template-columns: minmax(130px, 140px) minmax(130px, 140px);
+        grid-template-rows: 130px 118px 280px 118px 118px 130px 130px 123px;
+        grid-template-areas:
+      "book time"
+      "sneakers sneakers"
+      "shoes shoes"
+      "present present"
+      "notebook notebook"
+      "girl chemistry"
+      "girl toys"
+      "new-year new-year";
+    }
+}

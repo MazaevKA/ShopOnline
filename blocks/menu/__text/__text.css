@@ -1,0 +1,24 @@
+.menu__text {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+    color: #2D2D2D;
+}
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+    .menu__text {
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu__text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu__text {
+        display: none;
+    }
+}
