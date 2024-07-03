@@ -1,71 +1,63 @@
 .promo__card-time {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    width: 245px;
-    height: auto;
+    position: relative;
+    min-width: 245px;
+    min-height: 245px;
     border-radius: 20px;
-    background: url("../../../blocks/promo/img/time.jpg") no-repeat center/cover;
-    padding: 0 14px 20px 14px;
+    background: linear-gradient(180.00deg, rgba(7, 7, 7, 0) 30.702%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/time.jpg") no-repeat center/cover;
+    padding: 78px 20px 20px;
     grid-area: time;
     font-size: 30px;
 }
 
-.promo__card-time p {
-    margin-bottom: 14px;
-    font-weight: 700;
-    line-height: 130%;
-}
-
-.promo__card-time p:last-child {
-    margin-bottom: 0;
+.promo__card-time > .promo__card-discount {
+    right: 20px;
+    bottom: 20px;
 }
 
 @media (min-width: 1024px) and (max-width: 1919px) {
     .promo__card-time {
-        width: 217px;
+        min-width: 217px;
+        min-height: 217px;
         border-radius: 16px;
         font-size: 24px;
-        padding: 10px;
-        background-image: url("../../../blocks/promo/img/time-1024.jpg");
+        padding: 58px 10px 10px;
+        background: linear-gradient(180.00deg, rgba(7, 7, 7, 0) 30.702%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/time-1024.jpg") no-repeat center/cover;
     }
 
-    .promo__card-time p:not(:last-child) {
-        padding-right: 24px;
-        margin-bottom: 19px;
+    .promo__card-time > .promo__card-discount {
+        right: 10px;
+        bottom: 10px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .promo__card-time {
-        justify-content: space-between;
-        padding-top: 15px;
-        padding-left: 5px;
-        width: 140px;
-        height: 140px;
+        padding: 15px 10px 10px;
+        min-width: 140px;
+        min-height: 140px;
         border-radius: 12px;
         font-size: 16px;
-        background-image: url("../../../blocks/promo/img/time-768.jpg");
+        background: linear-gradient(180.00deg, rgba(7, 7, 7, 0) 30.702%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/time-768.jpg") no-repeat center/cover;
     }
 
-    .promo__card-time p:not(:last-child) {
-        margin: 0 auto;
+    .promo__card-time > .promo__card-discount {
+        right: 10px;
+        bottom: 10px;
     }
 }
 
 @media (max-width: 767px) {
     .promo__card-time {
-        width: 130px;
-        height: 130px;
-        border-radius: 12px;
+        min-width: 130px;
+        min-height: 130px;
+        border-radius: 8px;
         font-size: 12px;
-        padding: 28px 5px 5px 10px;
-        justify-content: space-between;
-        background-image: url("../../../blocks/promo/img/time-320.jpg");
+        padding: 28px 10px 10px;
+        background: linear-gradient(180.00deg, rgba(7, 7, 7, 0) 30.702%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/time-320.jpg") no-repeat center/cover;
     }
 
-    .promo__card-time p:not(:last-child) {
-        margin-right: 28px;
+    .promo__card-time > .promo__card-discount {
+        right: 5px;
+        bottom: 5px;
     }
 }

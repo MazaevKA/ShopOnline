@@ -1,0 +1,22 @@
+.timer__items {
+    display: flex;
+    column-gap: 30px;
+}
+
+@media (min-width: 1024px) and (max-width: 1919px) {
+    .timer__items {
+        column-gap: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .timer__items {
+        column-gap: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .timer__items {
+        column-gap: 8px;
+    }
+}

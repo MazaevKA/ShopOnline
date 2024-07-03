@@ -1,19 +1,17 @@
 .promo__card-new-year {
-    display: flex;
-    align-items: end;
-    width: 1160px;
-    height: auto;
+    align-content: end;
+    min-width: 1160px;
     border-radius: 20px;
     padding: 50px;
-    background: url("../../../blocks/promo/img/new-year.jpg") no-repeat center/cover;
+    background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) 25.388%,rgba(0, 0, 0, 0.16) 100%), url("../../../blocks/promo/img/new-year.jpg") no-repeat center/cover;
     grid-area: new-year;
-
 }
 
 .promo__card-new-year p {
-    padding: 30px 40px;
-    background-color: #FFFFFF;
-    color: #F91155;
+    display: inline-block;
+    padding: 32px 41px 32px 42px;
+    background-color: var(--color-white);
+    color: var(--color-red);
     font-weight: 700;
     font-size: 40px;
     line-height: 120%;
@@ -23,30 +21,30 @@
 
 @media (min-width: 1024px) and (max-width: 1919px) {
     .promo__card-new-year {
-        width: 940px;
-        height: 418px;
+        min-width: 940px;
         border-radius: 16px;
         padding: 39px 30px;
-        background-image: url("../../../blocks/promo/img/new-year-1024.jpg");
+        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) 25.388%,rgba(0, 0, 0, 0.16) 100%), url("../../../blocks/promo/img/new-year-1024.jpg") no-repeat center/cover;
     }
 
     .promo__card-new-year p {
         font-size: 30px;
-        padding: 23px 46px;
+        line-height: 120%;
+        padding: 24px 46px 23px 47px;
+        border-radius: 16px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .promo__card-new-year {
-        width: 700px;
-        height: 337px;
+        min-width: 700px;
         border-radius: 12px;
         padding: 26px;
-        background-image: url("../../../blocks/promo/img/new-year-768.jpg");
+        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) 25.388%,rgba(0, 0, 0, 0.16) 100%), url("../../../blocks/promo/img/new-year-768.jpg") no-repeat center/cover;
     }
 
     .promo__card-new-year p {
-        padding: 22px 33px;
+        padding: 22px 33px 22px 34px;
         font-size: 20px;
         line-height: 120%;
         border-radius: 12px;
@@ -55,16 +53,16 @@
 
 @media (max-width: 767px) {
     .promo__card-new-year {
-        width: 280px;
-        height: 123px;
+        min-width: 280px;
         padding: 10px 15px;
-        border-radius: 12px;
-        background-image: url("../../../blocks/promo/img/new-year-320.jpg");
+        border-radius: 8px;
+        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) 25.388%,rgba(0, 0, 0, 0.16) 100%), url("../../../blocks/promo/img/new-year-320.jpg") no-repeat center/cover;
     }
 
     .promo__card-new-year p {
-        padding: 7px 41px;
+        padding: 7px 41px 9px 41px;
         font-size: 12px;
+        line-height: 120%;
         border-radius: 6px;
     }
 }

@@ -13,7 +13,7 @@
   <div class="container">
     <div class="header__wrap">
       <a class="header__logo">Shop<span>Online</span></a>
-      <a class="header__nav">Меню</a>
+      <button class="header__nav" type="submit">Меню</button>
       <form action="#" class="form-search">
         <input type="text" class="form-search__input" placeholder="Я ищу...">
         <button class="form-search__button" type="submit"></button>
@@ -24,9 +24,10 @@
           <img class="menu__img" src="blocks/header/img/person.svg" alt="Профиль">
           <p class="menu__text">Профиль</p>
         </a>
-        <a href="#" class="menu__link menu__link--cart">
+        <a href="#" class="menu__link">
           <img class="menu__img" src="blocks/header/img/cart.svg" alt="Корзина">
           <p class="menu__text">Корзина</p>
+          <span class="menu__text--count">2</span>
         </a>
         <a href="#" class="menu__link">
           <img class="menu__img" src="blocks/header/img/favorite.svg" alt="Избранное">
@@ -45,8 +46,12 @@
       <div class="banner__wrap">
         <h2 class="banner__title">-50% на все ноутбуки</h2>
         <div class="timer">
-          <p class="timer__text">До конца акции:</p>
-          <p class="timer__time"><span>3</span>Дня <span>8</span>часов <span>43</span>минуты</p>
+          <p class="timer__title">До конца акции:</p>
+          <div class="timer__items">
+            <div class="timer__item timer__days" data-title="Дня">3</div>
+            <div class="timer__item timer__hours" data-title="часов">8</div>
+            <div class="timer__item timer__minutes" data-title="минуты">43</div>
+          </div>
         </div>
       </div>
     </div>
@@ -73,10 +78,8 @@
           <p>Идеи новогодних подарков</p>
         </div>
         <div class="promo__card-notebook">
-          <div class="promo__card-wrap">
-            <p>Выгодно в декабре!</p>
-            <p class="promo__card-discount">-15%</p>
-          </div>
+          <p>Выгодно в декабре!</p>
+          <p class="promo__card-discount">-15%</p>
         </div>
 
         <div class="promo__card-new-year">

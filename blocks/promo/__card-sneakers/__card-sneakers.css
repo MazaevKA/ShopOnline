@@ -1,40 +1,37 @@
 
 .promo__card-sneakers {
-    display: flex;
-    justify-content: start;
     padding: 20px;
     font-weight: 700;
     font-size: 30px;
-    width: 550px;
-    height: auto;
+    min-width: 550px;
     border-radius: 20px;
-    background: url("../../../blocks/promo/img/sneakers.jpg") no-repeat center/cover;
+    background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) 7.456%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/sneakers.jpg") no-repeat center/cover;
     grid-area: sneakers;
 }
 
 @media (min-width: 1024px) and (max-width: 1919px) {
     .promo__card-sneakers {
-        width: 464px;
+        min-width: 464px;
         border-radius: 16px;
-        background-image: url("../../../blocks/promo/img/sneakers-1024.jpg");
+        padding: 10px;
+        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) 7.456%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/sneakers-1024.jpg") no-repeat center/cover;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .promo__card-sneakers {
-        width: 300px;
-        height: 140px;
+        min-width: 300px;
         border-radius: 12px;
-        background-image: url("../../../blocks/promo/img/sneakers-768.jpg");
+        padding: 10px;
+        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) 7.456%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/sneakers-768.jpg") no-repeat center/cover;
     }
 }
 
 @media (max-width: 767px) {
     .promo__card-sneakers {
-        width: 280px;
-        height: 118px;
-        border-radius: 12px;
+        min-width: 280px;
+        border-radius: 8px;
         padding: 5px;
-        background-image: url("../../../blocks/promo/img/sneakers-320.jpg");
+        background: linear-gradient(180.00deg, rgba(0, 0, 0, 0) 7.456%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/sneakers-320.jpg") no-repeat center/cover;
     }
 }

@@ -1,38 +1,55 @@
 .promo__card-girl {
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    width: 245px;
-    height: auto;
+    position: relative;
+    min-width: 245px;
     border-radius: 20px;
     padding: 20px;
-    background: url("../../../blocks/promo/img/girl.jpg") no-repeat center/cover;
+    background: linear-gradient(180.00deg, rgba(7, 7, 7, 0) 30.702%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/girl.jpg") no-repeat top/cover;
     grid-area: girl;
 }
 
+.promo__card-girl > .promo__card-discount {
+    right: 20px;
+    bottom: 20px;
+}
+
+
 @media (min-width: 1024px) and (max-width: 1919px) {
     .promo__card-girl {
-        width: 206px;
+        min-width: 206px;
         border-radius: 16px;
-        background-image: url("../../../blocks/promo/img/girl-1024.jpg");
+        background: linear-gradient(180.00deg, rgba(7, 7, 7, 0) 30.702%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/girl-1024.jpg") no-repeat top/cover;
+    }
+
+    .promo__card-girl > .promo__card-discount {
+        right: 10px;
+        bottom: 10px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .promo__card-girl {
-        place-self: end;
-        width: 220px;
-        height: 220px;
-        border-radius: 24px;
-        background: url("../../../blocks/promo/img/girl-768.jpg") no-repeat top / cover;
+        align-self: end;
+        min-width: 220px;
+        min-height: 220px;
+        border-radius: 12px;
+        background: linear-gradient(180.00deg, rgba(7, 7, 7, 0) 30.702%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/girl-768.jpg") no-repeat top / cover;
+    }
+
+    .promo__card-girl > .promo__card-discount {
+        right: 10px;
+        bottom: 10px;
     }
 }
 
 @media (max-width: 767px) {
     .promo__card-girl {
-        width: 130px;
-        height: 280px;
-        border-radius: 16px;
-        background-image: url("../../../blocks/promo/img/girl-320.jpg");
+        min-width: 130px;
+        border-radius: 8px;
+        background: linear-gradient(180.00deg, rgba(7, 7, 7, 0) 30.702%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/girl-320.jpg") no-repeat top / cover;
+    }
+
+    .promo__card-girl > .promo__card-discount {
+        right: 10px;
+        bottom: 10px;
     }
 }

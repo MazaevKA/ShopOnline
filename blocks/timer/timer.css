@@ -1,5 +1,6 @@
-@import "__text/__text.css";
-@import "__time/__time.css";
+@import "__title/__title.css";
+@import "__items/__items.css";
+@import "__item/__item.css";
 
 .timer {
     display: flex;

@@ -1,50 +1,64 @@
 .promo__card-chemistry {
+    position: relative;
     padding: 20px;
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 22px;
-    width: 245px;
-    height: auto;
+    align-content: end;
+    min-width: 245px;
     border-radius: 20px;
     font-size: 30px;
     font-weight: 700;
-    line-height: 120%;
-    background: url("../../../blocks/promo/img/chemistry.jpg") no-repeat center/cover;
+    line-height: 130%;
+    background: linear-gradient(180.00deg, rgba(7, 7, 7, 0) 30.702%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/chemistry.jpg") no-repeat center/cover;
     grid-area: chemistry;
+}
+
+.promo__card-chemistry > .promo__card-discount {
+    left: 20px;
+    top: 20px;
 }
 
 @media (min-width: 1024px) and (max-width: 1919px) {
     .promo__card-chemistry {
-        width: 207px;
+        min-width: 207px;
         border-radius: 16px;
-        font-size: 19px;
-        padding: 10px 10px 20px;
-        background-image: url("../../../blocks/promo/img/chemistry-1024.jpg");
+        font-size: 20px;
+        line-height: 130%;
+        padding: 14px;
+        background: linear-gradient(180.00deg, rgba(7, 7, 7, 0) 30.702%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/chemistry-1024.jpg") no-repeat center/cover;
+    }
+
+    .promo__card-chemistry > .promo__card-discount {
+        left: 10px;
+        top: 10px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .promo__card-chemistry {
-        place-self: center;
+        align-self: center;
         grid-row: 3 / 5;
-        width: 140px;
-        height: 140px;
+        min-width: 140px;
+        min-height: 140px;
         border-radius: 12px;
         font-size: 16px;
-        padding: 10px 0 14px 14px;
-        background-image: url("../../../blocks/promo/img/chemistry-768.jpg");
+        line-height: 120%;
+        padding: 14px;
+        background: linear-gradient(180.00deg, rgba(7, 7, 7, 0) 30.702%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/chemistry-768.jpg") no-repeat center/cover;
+    }
+
+    .promo__card-chemistry > .promo__card-discount {
+        left: 10px;
+        top: 10px;
     }
 }
 
 @media (max-width: 767px) {
     .promo__card-chemistry {
-        width: 130px;
-        height: 130px;
+        min-width: 130px;
         justify-content: space-between;
         font-size: 12px;
         letter-spacing: -1px;
         border-radius: 12px;
         padding: 5px 10px 10px 9px;
-        background-image: url("../../../blocks/promo/img/chemistry-320.jpg");
+        background: linear-gradient(180.00deg, rgba(7, 7, 7, 0) 30.702%,rgba(0, 0, 0, 0.2) 100%), url("../../../blocks/promo/img/chemistry-320.jpg") no-repeat center/cover;
     }
 }

@@ -3,23 +3,26 @@
 
 .form-search {
     position: relative;
+    align-content: center;
     grid-area: search;
 }
 
 @media (min-width: 1024px) and (max-width: 1919px) {
     .form-search {
-
+        justify-self: end;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .form-search {
-        width: 540px;
+        min-width: 540px;
+        max-width: 100%;
+        justify-self: end;
     }
 }
 
 @media (max-width: 767px) {
     .form-search {
-
+        width: 100%;
     }
 }

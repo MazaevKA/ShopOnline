@@ -1,11 +1,8 @@
 .promo__card-book {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 245px;
-    height: auto;
+    align-content: end;
+    min-width: 245px;
     border-radius: 20px;
-    background: url("../../../blocks/promo/img/book.jpg") no-repeat center/cover;
+    background: linear-gradient(181.25deg, rgba(0, 0, 0, 0) 9.116%,rgba(0, 0, 0, 0.2) 99.018%), url("../../../blocks/promo/img/book.jpg") no-repeat center/cover;
     font-weight: 400;
     font-size: 30px;
     line-height: 130%;
@@ -20,11 +17,10 @@
 
 @media (min-width: 1024px) and (max-width: 1919px) {
     .promo__card-book {
-        width: 217px;
-        height: auto;
-        padding: 14px;
+        min-width: 217px;
+        padding: 10px;
         border-radius: 16px;
-        background-image: url("../../../blocks/promo/img/book-1024.jpg");
+        background: linear-gradient(181.25deg, rgba(0, 0, 0, 0) 9.116%,rgba(0, 0, 0, 0.2) 99.018%), url("../../../blocks/promo/img/book-1024.jpg") no-repeat center/cover;
         font-size: 24px;
     }
 
@@ -35,11 +31,10 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .promo__card-book {
-        width: 140px;
-        height: 140px;
+        min-width: 140px;
         border-radius: 12px;
-        padding: 0 4px 15px 10px;
-        background-image: url("../../../blocks/promo/img/book-768.jpg");
+        padding: 10px;
+        background: linear-gradient(181.25deg, rgba(0, 0, 0, 0) 9.116%,rgba(0, 0, 0, 0.2) 99.018%), url("../../../blocks/promo/img/book-768.jpg") no-repeat center/cover;
         font-size: 20px;
         line-height: 110%;
     }
@@ -49,14 +44,17 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .promo__card-book {
-        width: 130px;
-        height: 130px;
+        min-width: 130px;
         border-radius: 8px;
         font-size: 12px;
-        padding: 10px 55px 10px 10px;
-        background-image: url("../../../blocks/promo/img/book-320.jpg");
+        padding: 10px;
+        background: linear-gradient(181.25deg, rgba(0, 0, 0, 0) 9.116%,rgba(0, 0, 0, 0.2) 99.018%), url("../../../blocks/promo/img/book-320.jpg") no-repeat center/cover;
+    }
+
+    .promo__card-book p {
+        width: 65px;
     }
 
     .promo__card-book span {

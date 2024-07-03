@@ -11,7 +11,7 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: Lato, Inter, Open Sans, Helvetica Neue, sans-serif;
   font-weight: 400;
   color: var(--color-black);
   background-color: var(--color-white);
@@ -65,7 +65,8 @@ iframe {
 
 .container {
   margin: 0 auto;
-  width: 1770px;
+  min-width: 1920px;
+  padding: 0 75px;
 }
 
 .title {
@@ -85,7 +86,8 @@ iframe {
     /*font-size: 1.5625vw;*/
   }
   .container {
-    width: 320px;
+    min-width: 320px;
+    max-width: 767px;
     padding: 0 20px;
   }
 
@@ -99,7 +101,9 @@ iframe {
     /*font-size: 0.651042vw;*/
   }
   .container {
-    width: 700px;
+    min-width: 768px;
+    max-width: 1023px;
+    padding: 0 34px;
   }
 }
 
@@ -108,7 +112,9 @@ iframe {
     /*font-size: 0.9765625vw;*/
   }
   .container {
-    width: 940px;
+    min-width: 1024px;
+    max-width: 1769px;
+    padding: 0 42px;
   }
 
   .main {
